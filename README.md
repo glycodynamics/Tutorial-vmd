@@ -33,8 +33,40 @@ When VMD starts, by default three windows will open (Fig. 2): the VMD Main windo
 First, we will focus on visualizing the protein – after all, the protein is likely to be an important part of any structure in the PDB.  After that, we will explore representations of the carbohydrates/glycans.
 
 ### Visualizing the protein
-• Open VMD, Go to File and choose New Molecule. Brows the PDB structure you want to load and 
+• Open VMD, Go to File and choose New Molecule. Brows the PDB structure (e.g. 2CHB.pdb) you want to load and click Load.  
+• Now change representation from Main → Graphics → Representations:\
 
+In Selected Atoms, type protein. can choose follwoing options:
+```
+Coloring Method: Secondry Structure
+Drawing Method : New Cartoon
+Material : Opaque
+```
+Now you should see how the molecule is organized. Looks familier? Let’s do some more:
+• Now chnge Drawing Method and see how each representation looks like:
+
+#### VMD representation styles: 
+|Representation styles|	Description|
+| --------| ------------- |
+|Lines|	simple lines for bonds, points for atoms|
+|Bonds|	lighted cylinders for bonds|
+|CPK|	scaled VDW spheres, with cylinders for bonds|
+|VDW|	solid van der Waal spheres for atoms, no bonds|
+|Points|	just points for atoms, no bonds|
+|Licorice|	spheres for atoms, cylinders for bonds, same radius|
+|Ribbons|	flat ribbon through the C_alpha atoms|
+|Tube|	smooth cylindrical tube through the C_alpha atoms|
+|Cartoon|	cartoon diagram (cylinders, sheets and loops) based on secondary structure|
+|PaperChain|display ring structures as polygons, colored by ring pucker| 
+|New Cartoon| smooth cartoon diagram (smooth ribbons) based on secondary structure|
+|MSMS|	molecular surface as determined by the program MSMS|
+|HBonds|	display hydrogen bonds|
+|Surf|	molecular surface as determined by SURF program|
+|Dotted|	dotted van der Wall spheres for atoms, no bonds|
+|Solvent|	dotted representation of the solvent accessible surface|
+|Trace|	connected cylindrical segments through C_alpha atoms||Off|	do not draw anything|
+
+#### VMD representation styles: 
 
 
 ### Visualize Glycans
@@ -46,6 +78,12 @@ Load a file containing a glycan into VMD (i.e. PDB ID: 3SGJ or 2CHB). On your ke
 ‘b’ – apply the 3D-SNFG representation and label the reducing terminus
 ‘d’ – delete the drawn objects
 ```
+
+## AO (ambient occlusion lighting)
+
+## ImageMagick
+The free program display from ImageMagick - see http://www.imagemagick.org/ - should be able to read and convert between all of these formats.
+
 
 
 ### Acknowledgement:
