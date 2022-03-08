@@ -22,7 +22,7 @@ One VMD and 3D-SNFG plugin is installed, to start VMD folling the instructions g
 • **Windows**: Select Start → Programs → VMD.\
 
 When VMD starts, by default three windows will open (Fig. 2): the VMD Main window, the OpenGL Display window, and the VMD Console window (or a Terminal window on a Mac). To end a VMD session, go to the VMD Main window, and choose File $ \rightarrow $ Quit. You can also quit VMD by closing the VMD Console window or the VMD Main window.
-![VMD DISPLAY](https://github.com/glycodynamics/vmd/upload/main/images/image_vmd_start.png)
+![VMD DISPLAY](https://github.com/glycodynamics/vmd/blob/main/images/image_vmd_start.png)
 
 ### Change Background, on/off axis: 
 • You can set the background to white or any other color (VMD Main → Graphics → Colors → Display → Background → White), 
@@ -84,11 +84,11 @@ Load a file containing a glycan into VMD (i.e. PDB ID: 3SGJ or 2CHB). On your ke
 ## ImageMagick
 The free program display from ImageMagick - see http://www.imagemagick.org/ - should be able to read and convert between all of these formats.
 
-![VMD WATER](https://github.com/glycodynamics/vmd/upload/main/images/image_vmd_water.png)
+![VMD WATER](https://github.com/glycodynamics/vmd/blob/main/images/image_vmd_water.png)
 
-![VMD TOXIN](https://github.com/glycodynamics/vmd/upload/main/images/image_vmd_tc.png)
+![VMD TOXIN](https://github.com/glycodynamics/vmd/blob/main/images/image_vmd_tc.png)
 
-![VMD SPROTEIN](https://github.com/glycodynamics/vmd/upload/main/images/image_vmd_sprotein.png)
+![VMD SPROTEIN](https://github.com/glycodynamics/vmd/blob/main/images/image_vmd_sprotein.png)
 
 
 ### Acknowledgement:
