@@ -1,49 +1,82 @@
 # VMD tutorial
-This tutorial was written for the VMD workshop by CCBRC, March 8-9, 2022. This is vary basic tutorial to a avanced molecular visualizer program VMD. Aim of this tutorial is just to show how glycan can be represented in SNFG Representation in 3D images of g;cyan containing biomolecules.
+This tutorial was written for the VMD workshop by CCBRC, March 8-9, 2022. This is a very basic tutorial to an advanced molecular visualizer program VMD. This tutorial aims to show how glycan can be represented in SNFG Representation in 3D images of glycan-containing biomolecules.
 
-Download and install VMD if you have not done so for. VMD supports all major computer platforms and can be obtained from the [VMD homepage](http://www.ks.uiuc.edu/Research/vmd) 
+Download and install VMD if you have not done so. VMD supports all major computer platforms and can be obtained from the [VMD homepage](http://www.ks.uiuc.edu/Research/vmd) 
 
-We will also be using a pluging to visualize glycans in SNFG representtaion. Download pluging from Glycam-Web:
+We will also be using a plugin to visualize glycans in SNFG representation. Download plugin from Glycam-Web:
 
 [Linux/Mac](http://legacy.glycam.org/docs/othertoolsservice/download/Software/publication-software/3D-SNFG_v1_mod-vmdrc_Linux-Mac.zip): Download, unzip and move extracted .vmdrc file to your home ```mv .vmdrc ~/```
 
 
 [Windows Users](http://legacy.glycam.org/docs/othertoolsservice/download/Software/publication-software/3D-SNFG_v1_mod-vmdrc_Windows.zip): Download, unzip and move extracted vmd.rc file to C:/Program Files (x86)/VMD/ \
 
-## Download glcyan containing PDB files:
-The easiest way to download a protein structure from the protein data bank (PDB) is by typing the PDB ID into the search box of the [PDB Webpage](https://www.rcsb.org).  Go to rcsb.org now and type 1G1Y (case insensitive) into the search box, and then then hit enter. Repeat the process for 2CHB, 3SGJ, 1G1R, 1RVZ, and for any other file that is of yor interest. Alternatively, you can download some PDB files from here:  
+## Download glycan containing PDB files:
+The easiest way to download a protein structure from the protein data bank (PDB) is by typing the PDB ID into the search box of the [PDB Webpage](https://www.rcsb.org).  Go to [PDB Webpage](https://www.rcsb.org) now and type PDB ID (case insensitive) into the search box, and then then hit enter. Repeat the process for any other file that is of your interest. 
+
+Alternatively, you can download structure of glycan containing protein from PDBs (i.e. PDB ID: [3SGJ](https://files.rcsb.org/download/3SGJ.pdb) or [2CHB](https://files.rcsb.org/download/3SGJ.pdb), a [Glycan](https://raw.githubusercontent.com/glycodynamics/vmd/main/pdbs/structure.pdb) and [Glycosylated Spike Protein](https://github.com/glycodynamics/vmd/raw/main/pdbs/sprotein_open.pdb) from these links.
 
 ## 1 VMD Graphical Interface
 
-One VMD and 3D-SNFG plugin is installed, to start VMD folling the instructions given below:
+One VMD and 3D-SNFG plugin is installed to start VMD following the instructions given below:
 
 • **Mac OS X**: Double click on the VMD application icon in the Applications directory.\
 • **Linux and other Unix platforms**: Type vmd in a terminal window.\
-• **Windows**: Select Start → Programs → VMD.\
+• **Windows**: Select Start → Programs → VMD.
 
-When VMD starts, by default three windows will open (Fig. 2): the VMD Main window, the OpenGL Display window, and the VMD Console window (or a Terminal window on a Mac). To end a VMD session, go to the VMD Main window, and choose File $ \rightarrow $ Quit. You can also quit VMD by closing the VMD Console window or the VMD Main window.
+When VMD starts, by default, three windows will open (Fig. 2): the VMD Main window, the OpenGL Display window, and the VMD Console window (or a Terminal window on a Mac). To end a VMD session, go to the VMD Main window, and choose File $ \rightarrow $ Quit. You can also quit VMD by closing the VMD Console window or the VMD Main window.
 ![VMD DISPLAY](https://github.com/glycodynamics/vmd/blob/main/images/image_vmd_start.png)
 
 ### Change Background, on/off axis: 
-• You can set the background to white or any other color (VMD Main → Graphics → Colors → Display → Background → White), 
-• set Display to Orthographic (Display → Orthographic)
-• Turn on/off axis (Display → Axes → on/Off).
+• You can set the background to white or any other color (VMD Main → Graphics → Colors → Display → Background → White)\ 
+• set Display to Orthographic (Display → Orthographic)\
+rn on/off axis (Display → Axes → on/Off).
 
-## Visualizing the Structures Using VMD
-First, we will focus on visualizing the protein – after all, the protein is likely to be an important part of any structure in the PDB.  After that, we will explore representations of the carbohydrates/glycans.
+## 2. Visualizing the Structures Using VMD
+First, we will focus on visualizing the protein – after all, the protein is likely to be an essential part of any structure in the PDB.  After that, we will explore representations of the carbohydrates/glycans.
 
-### Visualizing the protein
-• Open VMD, Go to File and choose New Molecule. Brows the PDB structure (e.g. 2CHB.pdb) you want to load and click Load.  
-• Now change representation from Main → Graphics → Representations:\
+### 2.1 Visualizing the protein
+• Open VMD, Go to File and choose New Molecule. Brows the PDB structure you want to load (e.g. 2CHB.pdb) and click load.  
+• Now change representation from Main → Graphics → Representations:
 
-In Selected Atoms, type protein. can choose follwoing options:
+In Selected Atoms, type protein. You can choose following options:
 ```
-Coloring Method: Secondry Structure
-Drawing Method : New Cartoon
-Material : Opaque
+Coloring Method: Secondary Structure
+Drawing Method: New Cartoon
+Material: Opaque
 ```
-Now you should see how the molecule is organized. Looks familier? Let’s do some more:
-• Now chnge Drawing Method and see how each representation looks like:
+**Mouse Modes**
+The available mouse modes are as follows:
+
+Rotate Mode (hot key 'r')
+
+When the mouse is in rotate mode, holding the left mouse button down and moving the mouse rotates the molecules about axes parallel to the screen, in a `virtual trackball' behavior. To get a rotation around the axes coming out of the screen (the `z' axis), hold the middle button down and move the mouse left or right.
+You can leave molecules rotating without continuously moving the mouse. Start the molecule moving with the mouse, as above, then release the mouse button before you stop moving the mouse. With some practice, it becomes easy to impart a slight spin on the molecule, or whirl it about madly.
+
+Translate Mode (hot key 't')
+
+When the mouse is in translate mode, holding the left button down allows you to move the molecules parallel to the screen plane (left, right, up, and down). To move the molecule towards or away from you, hold the middle button down and move the mouse right or left, respectively.
+
+**Hot Keys**
+```
+|Hot Key|  Command      |      Purpose                       | 
+|-------|---------------|---------------------------------------|
+| r, R  |	mouse mode 0 0|	enter rotate mode; stop rotation
+| t, T  |	mouse mode 1 0|	enter translate mode
+| s, S  |	mouse mode 2 0|	enter scaling mode
+|  =    |	              |	Reset View
+|  0    |	mouse mode 4 0|	query item
+|  c    |	mouse mode 4 1|	pick center
+|  1    |	mouse mode 4 2|	pick atom
+|  2    |	mouse mode 4 3|	pick bond (2 atoms)
+|  3    |	mouse mode 4 4|	pick angle (3 atoms)
+|  4    |	mouse mode 4 5|	pick dihedral (4 atoms)
+
+```
+
+
+Now you should see how the molecule is organized. Looks familiar? Let’s do some more:\
+
+Now change Drawing Method and see what each representation looks like:
 
 #### VMD representation styles: 
 |Representation styles|	Description|
@@ -66,36 +99,89 @@ Now you should see how the molecule is organized. Looks familier? Let’s do som
 |Solvent|	dotted representation of the solvent accessible surface|
 |Trace|	connected cylindrical segments through C_alpha atoms||Off|	do not draw anything|
 
-#### VMD representation styles: 
 
+### 2.2 Visualize Glycans 
+Open SARS-Cov-2 structures in VMD and then change graphical representation settings as below:
 
-### Visualize Glycans
-
-Load a file containing a glycan into VMD (i.e. PDB ID: 3SGJ or 2CHB). On your keyboard, use the following shortcut keys:
 ```
+Selected Atoms  : protein
+Coloring Method : Chain
+Drawing Method  : New Cartoon
+Material                : Opaque
+```
+Create a new representation for membrane :
+```
+Selected Atoms  : resname POPC POPE POPI POPS CHL1
+Coloring Method : Type
+Drawing Method  : VDW
+Material        : AOChalky
+
+```
+Create a new representation from glycans part:
+```
+Selected Atoms  : not protein and not resname POPC POPE POPI POPS CHL1
+Coloring Method : Name
+Drawing Method  : Licorice
+Material        : AOChalky
+
+```
+. On your keyboard, use the following shortcut keys:
+```
+‘b’ – apply the 3D-SNFG representation and label the reducing terminus
 ‘i’ – apply the SNFG-Icons representation
 ‘g’ – apply the 3D-SNFG representation
-‘b’ – apply the 3D-SNFG representation and label the reducing terminus
 ‘d’ – delete the drawn objects
 ```
 
-## AO (ambient occlusion lighting)
 
-## ImageMagick
-The free program display from ImageMagick - see http://www.imagemagick.org/ - should be able to read and convert between all of these formats.
+## 3. Rendering:
+Open the Render window (VMD Main --> File --> Render) and select `Tachyon' from the Render the current scene using menu. Both of the text boxes will be filled with default values which should not need to be changed for the purposes of this tutorial. Press the Start Rendering button. After a few moments of processing, you should see the message.
+
+Info) Rendering complete.
+
+Default render command will be:
+```"
+/softrepo/vmd/vmd-1.9.4a51/lib/vmd/tachyon_LINUXAMD64" -aasamples 12 %s -format TARGA -o %s.tga
+
+```
+
+To set the resolution, edit this command and add keyword ```-res 2400 2400 ``` after ```%s```.
+```
+/softrepo/vmd/vmd-1.9.4a51/lib/vmd/tachyon_LINUXAMD64" -aasamples 12 %s -red 2400 2400 -format TARGA -o %s.tga
+
+```
+### 3.1 AO (ambient occlusion lighting)
+Turn ambient occlusion lighting on or off. This only affects renderers that support ambient occlusion lighting. It will have no visible effect on the interactive VMD display or on renderers that don't support it. At present, only the Tachyon and TachyonInternal renderers are capable of ambient occlusion lighting.
+
+It is must to turn on Amb. Occl in (VMD Main --> Display --> Display Setting):
+```
+Shadows  : on
+Amb Occl : on
+```
+Now render his images with and without these settings and see the difference it makes.
+
+
+![VMD SPROTEIN](https://github.com/glycodynamics/vmd/blob/main/images/image_vmd_sprotein.png)
+
+Some other example images with ambient occlusion lighting:
 
 ![VMD WATER](https://github.com/glycodynamics/vmd/blob/main/images/image_vmd_water.png)
 
 ![VMD TOXIN](https://github.com/glycodynamics/vmd/blob/main/images/image_vmd_tc.png)
 
-![VMD SPROTEIN](https://github.com/glycodynamics/vmd/blob/main/images/image_vmd_sprotein.png)
+
+## 4. ImageMagick
+The free program display from ImageMagick - see http://www.imagemagick.org/ - should be able to read and convert between all of these formats generated by VMD.
+
 
 
 ### Acknowledgement:
 This workshop is supported by an Institutional Development Award (IDeA) from the National Institute of General Medical Sciences of the US National Institutes of Health under award number P20GM130460.
+
+
 ### Author:
 ```
-Dr. Sushil K. Mishra, PhD
+Sushil K. Mishra, PhD
 Research Scientist | Core-Manager
 Computational Chemistry and Bioinformatics Research Core
 Glycoscience Centre of Research Excellence (GlyCORE) 
@@ -106,7 +192,4 @@ sushil_at_olemiss.edu
 [Twitter](https://twitter.com/glycodynamics)\
 [GlyCORE Twitter](https://twitter.com/UM_glycore)\
 [CCBRC Web-page](https://pharmacy.olemiss.edu/glycore/computationalchemistrybioinformaticscore)
-
- 
-
 
