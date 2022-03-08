@@ -17,12 +17,12 @@ The easiest way to download a protein structure from the protein data bank (PDB)
 
 One VMD and 3D-SNFG plugin is installed, to start VMD folling the instructions given below:
 
-• Mac OS X: Double click on the VMD application icon in the Applications directory.\
-• Linux and other Unix platforms: Type vmd in a terminal window.\
-• Windows: Select Start → Programs → VMD.\
+• **Mac OS X**: Double click on the VMD application icon in the Applications directory.\
+• **Linux and other Unix platforms**: Type vmd in a terminal window.\
+• **Windows**: Select Start → Programs → VMD.\
 
 When VMD starts, by default three windows will open (Fig. 2): the VMD Main window, the OpenGL Display window, and the VMD Console window (or a Terminal window on a Mac). To end a VMD session, go to the VMD Main window, and choose File $ \rightarrow $ Quit. You can also quit VMD by closing the VMD Console window or the VMD Main window.
-![VMD DISPLAY](https://www.ks.uiuc.edu/Training/Tutorials/vmd/tutorial-html/img7.gif)
+![VMD DISPLAY](https://github.com/glycodynamics/vmd/upload/main/images/image_vmd_start.png)
 
 ### Change Background, on/off axis: 
 • You can set the background to white or any other color (VMD Main → Graphics → Colors → Display → Background → White), 
@@ -84,6 +84,11 @@ Load a file containing a glycan into VMD (i.e. PDB ID: 3SGJ or 2CHB). On your ke
 ## ImageMagick
 The free program display from ImageMagick - see http://www.imagemagick.org/ - should be able to read and convert between all of these formats.
 
+![VMD WATER](https://github.com/glycodynamics/vmd/upload/main/images/image_vmd_water.png)
+
+![VMD TOXIN](https://github.com/glycodynamics/vmd/upload/main/images/image_vmd_tc.png)
+
+![VMD SPROTEIN](https://github.com/glycodynamics/vmd/upload/main/images/image_vmd_sprotein.png)
 
 
 ### Acknowledgement:
