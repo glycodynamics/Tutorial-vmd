@@ -58,8 +58,8 @@ When the mouse is in translate mode, holding the left button down allows you to 
 
 **Hot Keys**
 ```
-|Hot Key|  Command      |      Purpose                       | 
-|-------|---------------|---------------------------------------|
+|Hot Key|  Command            |      Purpose                       | 
+|-------|---------------------|---------------------------------------|
 | r, R  |	mouse mode 0 0|	enter rotate mode; stop rotation
 | t, T  |	mouse mode 1 0|	enter translate mode
 | s, S  |	mouse mode 2 0|	enter scaling mode
