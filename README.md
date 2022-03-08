@@ -1,10 +1,12 @@
 # VMD tutorial
 This tutorial was written for the VMD workshop by CCBRC, March 8-9, 2022. This is a very basic tutorial to an advanced molecular visualizer program VMD. This tutorial aims to show how glycan can be represented in SNFG Representation in 3D images of glycan-containing biomolecules.
 
+## Installation
 Download and install VMD if you have not done so. VMD supports all major computer platforms and can be obtained from the [VMD homepage](http://www.ks.uiuc.edu/Research/vmd) 
 
-We will also be using a plugin to visualize glycans in SNFG representation. Download plugin from Glycam-Web:
+## Install plugin for SNFG representation
 
+We will also be using a plugin to visualize glycans in SNFG representation. Download plugin from Glycam-Web:
 [Linux/Mac](http://legacy.glycam.org/docs/othertoolsservice/download/Software/publication-software/3D-SNFG_v1_mod-vmdrc_Linux-Mac.zip): Download, unzip and move extracted .vmdrc file to your home ```mv .vmdrc ~/```
 
 
