@@ -120,7 +120,7 @@ Drawing Method  : VDW
 Material        : AOChalky
 
 ```
-Create a new representation from glycans part:
+Create a new representation for glycans:
 ```
 Selected Atoms  : not protein and not resname POPC POPE POPI POPS CHL1
 Coloring Method : Name
