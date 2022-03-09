@@ -7,6 +7,7 @@ Download and install VMD if you have not done so. VMD supports all major compute
 ## Install plugin for SNFG representation
 
 We will also be using a plugin to visualize glycans in SNFG representation. Download plugin from Glycam-Web:
+
 [Linux/Mac](http://legacy.glycam.org/docs/othertoolsservice/download/Software/publication-software/3D-SNFG_v1_mod-vmdrc_Linux-Mac.zip): Download, unzip and move extracted .vmdrc file to your home ```mv .vmdrc ~/```
 
 
