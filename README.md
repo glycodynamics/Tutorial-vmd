@@ -30,9 +30,9 @@ When VMD starts, by default, three windows will open (Fig. 2): the VMD Main wind
 ![VMD DISPLAY](https://github.com/glycodynamics/vmd/blob/main/images/image_vmd_start.png)
 
 ### Change Background, on/off axis: 
-• You can set the background to white or any other color (VMD Main → Graphics → Colors → Display → Background → White)\ 
-• set Display to Orthographic (Display → Orthographic)\
-rn on/off axis (Display → Axes → on/Off).
+• You can set the background to white or any other color (VMD Main → Graphics → Colors → Display → Background → White)
+• set Display to Orthographic (Display → Orthographic)
+• On/off axis (Display → Axes → on/Off)
 
 ## 2. Visualizing the Structures Using VMD
 First, we will focus on visualizing the protein – after all, the protein is likely to be an essential part of any structure in the PDB.  After that, we will explore representations of carbohydrates/glycans.
