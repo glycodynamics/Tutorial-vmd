@@ -145,13 +145,13 @@ Info) Rendering complete.
 
 The default render command will be:
 ```"
-/softrepo/vmd/vmd-1.9.4a51/lib/vmd/tachyon_LINUXAMD64" -aasamples 12 %s -format TARGA -o %s.tga
+/usr/local/lib/vmd/tachyon_LINUXAMD64 -aasamples 12 %s -format TARGA -o %s.tga
 
 ```
 
 To set the resolution, edit this command and add the keyword ```-res 2400 2400 ``` after ```%s```.
 ```
-/softrepo/vmd/vmd-1.9.4a51/lib/vmd/tachyon_LINUXAMD64" -aasamples 12 %s -red 2400 2400 -format TARGA -o %s.tga
+/usr/local/lib/vmd/tachyon_LINUXAMD64 -aasamples 12 %s -red 2400 2400 -format TARGA -o %s.tga
 
 ```
 ### 3.1 AO (ambient occlusion lighting)
