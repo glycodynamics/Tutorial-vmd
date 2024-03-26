@@ -14,15 +14,15 @@ We will also be using a plugin to visualize glycans in SNFG representation. Down
 [Windows Users](http://legacy.glycam.org/docs/othertoolsservice/download/Software/publication-software/3D-SNFG_v1_mod-vmdrc_Windows.zip): Download, unzip and move extracted vmd.rc file to C:/Program Files (x86)/VMD/ \
 
 ## Download glycan containing PDB files:
-The easiest way to download a protein structure from the protein data bank (PDB) is by typing the PDB ID into the search box of the [PDB Webpage](https://www.rcsb.org).  Go to [PDB Webpage](https://www.rcsb.org) now and type PDB ID (case insensitive) into the search box, and then then hit enter. Repeat the process for any other file that is of your interest. 
+The easiest way to download a protein structure from the protein data bank (PDB) is by typing the PDB ID into the search box of the [PDB Webpage](https://www.rcsb.org).  Go to [PDB Webpage](https://www.rcsb.org) now type PDB ID (case insensitive) into the search box, and then hit enter. Repeat the process for any other file that is of your interest. 
 
-Alternatively, you can download structure of glycan containing protein from PDBs (i.e. PDB ID: [3SGJ](https://files.rcsb.org/download/3SGJ.pdb) or [2CHB](https://files.rcsb.org/download/3SGJ.pdb), a [Glycan](https://raw.githubusercontent.com/glycodynamics/vmd/main/pdbs/structure.pdb) and [Glycosylated Spike Protein](https://github.com/glycodynamics/vmd/raw/main/pdbs/sprotein_open.pdb) from these links.
+Alternatively, you can download the structure of glycan containing protein from PDBs (i.e. PDB ID: [3SGJ](https://files.rcsb.org/download/3SGJ.pdb) or [2CHB](https://files.rcsb.org/download/3SGJ.pdb), a [Glycan](https://raw.githubusercontent.com/glycodynamics/vmd/main/pdbs/structure.pdb) and [Glycosylated Spike Protein](https://github.com/glycodynamics/vmd/raw/main/pdbs/sprotein_open.pdb) from these links.
 
 ## 1 VMD Graphical Interface
 
 One VMD and 3D-SNFG plugin is installed to start VMD following the instructions given below:
 
-• **Mac OS X**: Double click on the VMD application icon in the Applications directory.\
+• **Mac OS X**: Double-click on the VMD application icon in the Applications directory.\
 • **Linux and other Unix platforms**: Type vmd in a terminal window.\
 • **Windows**: Select Start → Programs → VMD.
 
@@ -38,10 +38,10 @@ rn on/off axis (Display → Axes → on/Off).
 First, we will focus on visualizing the protein – after all, the protein is likely to be an essential part of any structure in the PDB.  After that, we will explore representations of the carbohydrates/glycans.
 
 ### 2.1 Visualizing the protein
-• Open VMD, Go to File and choose New Molecule. Brows the PDB structure you want to load (e.g. 2CHB.pdb) and click load.  
+• Open VMD, Go to File, and choose New Molecule. Browse the PDB structure you want to load (e.g. 2CHB.pdb) and click load.  
 • Now change representation from Main → Graphics → Representations:
 
-In Selected Atoms, type protein. You can choose following options:
+In Selected Atoms, type protein. You can choose the following options:
 ```
 Coloring Method: Secondary Structure
 Drawing Method: New Cartoon
@@ -52,8 +52,9 @@ The available mouse modes are as follows:
 
 Rotate Mode (hot key 'r')
 
-When the mouse is in rotate mode, holding the left mouse button down and moving the mouse rotates the molecules about axes parallel to the screen, in a `virtual trackball' behavior. To get a rotation around the axes coming out of the screen (the `z' axis), hold the middle button down and move the mouse left or right.
-You can leave molecules rotating without continuously moving the mouse. Start the molecule moving with the mouse, as above, then release the mouse button before you stop moving the mouse. With some practice, it becomes easy to impart a slight spin on the molecule, or whirl it about madly.
+When the mouse is in rotate mode, holding the left mouse button and moving the mouse rotates the molecules about axes parallel to the screen, in a `virtual trackball` behavior.
+To get a rotation around the axes coming out of the screen (the `z` axis), hold the middle button down and move the mouse left or right.
+You can leave molecules rotating without continuously moving the mouse. Start the molecule moving with the mouse, as above, then release the mouse button before you stop moving the mouse. With some practice, it becomes easy to impart a slight spin on the molecule or whirl it about madly.
 
 Translate Mode (hot key 't')
 
@@ -61,8 +62,8 @@ When the mouse is in translate mode, holding the left button down allows you to 
 
 **Hot Keys**
 ```
-|Hot Key|  Command            |      Purpose                       | 
-|-------|---------------------|---------------------------------------|
+|Hot Key|  Command            |      Purpose                      
+|-------|---------------------|-----------------------------------
 | r, R  |	mouse mode 0 0|	enter rotate mode; stop rotation
 | t, T  |	mouse mode 1 0|	enter translate mode
 | s, S  |	mouse mode 2 0|	enter scaling mode
@@ -79,22 +80,22 @@ When the mouse is in translate mode, holding the left button down allows you to 
 
 Now you should see how the molecule is organized. Looks familiar? Let’s do some more:\
 
-Now change Drawing Method and see what each representation looks like:
+Now change the Drawing Method and see what each representation looks like:
 
 #### VMD representation styles: 
 |Representation styles|	Description|
 | --------| ------------- |
 |Lines|	simple lines for bonds, points for atoms|
-|Bonds|	lighted cylinders for bonds|
+|Bonds|	Lighted cylinders for bonds|
 |CPK|	scaled VDW spheres, with cylinders for bonds|
 |VDW|	solid van der Waal spheres for atoms, no bonds|
 |Points|	just points for atoms, no bonds|
 |Licorice|	spheres for atoms, cylinders for bonds, same radius|
 |Ribbons|	flat ribbon through the C_alpha atoms|
 |Tube|	smooth cylindrical tube through the C_alpha atoms|
-|Cartoon|	cartoon diagram (cylinders, sheets and loops) based on secondary structure|
+|Cartoon|	Cartoon diagram (cylinders, sheets, and loops) based on secondary structure|
 |PaperChain|display ring structures as polygons, colored by ring pucker| 
-|New Cartoon| smooth cartoon diagram (smooth ribbons) based on secondary structure|
+|New Cartoon| Smooth cartoon diagram (smooth ribbons) based on secondary structure|
 |MSMS|	molecular surface as determined by the program MSMS|
 |HBonds|	display hydrogen bonds|
 |Surf|	molecular surface as determined by SURF program|
@@ -110,9 +111,9 @@ Open SARS-Cov-2 structures in VMD and then change graphical representation setti
 Selected Atoms  : protein
 Coloring Method : Chain
 Drawing Method  : New Cartoon
-Material                : Opaque
+Material        : Opaque
 ```
-Create a new representation for membrane :
+Create a new representation for the membrane :
 ```
 Selected Atoms  : resname POPC POPE POPI POPS CHL1
 Coloring Method : Type
@@ -138,17 +139,17 @@ Material        : AOChalky
 
 
 ## 3. Rendering:
-Open the Render window (VMD Main --> File --> Render) and select `Tachyon' from the Render the current scene using menu. Both of the text boxes will be filled with default values which should not need to be changed for the purposes of this tutorial. Press the Start Rendering button. After a few moments of processing, you should see the message.
+Open the Render window (VMD Main --> File --> Render) and select `Tachyon' from the Render the current scene using the menu. Both of the text boxes will be filled with default values which should not need to be changed for this tutorial. Press the Start Rendering button. After a few moments of processing, you should see the message.
 
 Info) Rendering complete.
 
-Default render command will be:
+The default render command will be:
 ```"
 /softrepo/vmd/vmd-1.9.4a51/lib/vmd/tachyon_LINUXAMD64" -aasamples 12 %s -format TARGA -o %s.tga
 
 ```
 
-To set the resolution, edit this command and add keyword ```-res 2400 2400 ``` after ```%s```.
+To set the resolution, edit this command and add the keyword ```-res 2400 2400 ``` after ```%s```.
 ```
 /softrepo/vmd/vmd-1.9.4a51/lib/vmd/tachyon_LINUXAMD64" -aasamples 12 %s -red 2400 2400 -format TARGA -o %s.tga
 
@@ -156,7 +157,7 @@ To set the resolution, edit this command and add keyword ```-res 2400 2400 ``` a
 ### 3.1 AO (ambient occlusion lighting)
 Turn ambient occlusion lighting on or off. This only affects renderers that support ambient occlusion lighting. It will have no visible effect on the interactive VMD display or on renderers that don't support it. At present, only the Tachyon and TachyonInternal renderers are capable of ambient occlusion lighting.
 
-It is must to turn on Amb. Occl in (VMD Main --> Display --> Display Setting):
+It is a must to turn on Amb. Occl in (VMD Main --> Display --> Display Setting):
 ```
 Shadows  : on
 Amb Occl : on
@@ -177,14 +178,13 @@ Some other example images with ambient occlusion lighting:
 The free program display from ImageMagick - see http://www.imagemagick.org/ - should be able to read and convert between all of these formats generated by VMD.
 
 
-
 ### Acknowledgement:
 This workshop is supported by an Institutional Development Award (IDeA) from the National Institute of General Medical Sciences of the US National Institutes of Health under award number P20GM130460.
 
 
 ### Author:
 ```
-Sushil K. Mishra, PhD
+Sushil Mishra, PhD
 Research Scientist | Core-Manager
 Computational Chemistry and Bioinformatics Research Core
 Glycoscience Centre of Research Excellence (GlyCORE) 
