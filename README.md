@@ -35,7 +35,7 @@ When VMD starts, by default, three windows will open (Fig. 2): the VMD Main wind
 rn on/off axis (Display → Axes → on/Off).
 
 ## 2. Visualizing the Structures Using VMD
-First, we will focus on visualizing the protein – after all, the protein is likely to be an essential part of any structure in the PDB.  After that, we will explore representations of the carbohydrates/glycans.
+First, we will focus on visualizing the protein – after all, the protein is likely to be an essential part of any structure in the PDB.  After that, we will explore representations of carbohydrates/glycans.
 
 ### 2.1 Visualizing the protein
 • Open VMD, Go to File, and choose New Molecule. Browse the PDB structure you want to load (e.g. 2CHB.pdb) and click load.  
@@ -52,9 +52,9 @@ The available mouse modes are as follows:
 
 Rotate Mode (hot key 'r')
 
-When the mouse is in rotate mode, holding the left mouse button and moving the mouse rotates the molecules about axes parallel to the screen, in a `virtual trackball` behavior.
-To get a rotation around the axes coming out of the screen (the `z` axis), hold the middle button down and move the mouse left or right.
-You can leave molecules rotating without continuously moving the mouse. Start the molecule moving with the mouse, as above, then release the mouse button before you stop moving the mouse. With some practice, it becomes easy to impart a slight spin on the molecule or whirl it about madly.
+When the mouse is in rotate mode, holding the left mouse button and moving the mouse rotates the molecules about axes parallel to the screen, in a `virtual trackball` behavior.\
+To get a rotation around the axes coming out of the screen (the `z` axis), hold the middle button down and move the mouse left or right.\
+You can leave molecules rotating without continuously moving the mouse. Start the molecule moving with the mouse, as above, then release the mouse button before you stop moving the mouse. With some practice, it becomes easy to impart a slight spin on the molecule.
 
 Translate Mode (hot key 't')
 
